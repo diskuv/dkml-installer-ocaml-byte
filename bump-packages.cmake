@@ -16,7 +16,7 @@ include(${DKML_BUMP_PACKAGES_PARTICIPANT_MODULE})
 
 DkMLReleaseParticipant_DuneBuildOpamFiles()
 DkMLBumpPackagesParticipant_DuneIncUpgrade(
-    REL_FILENAMES installer/bin/dune-common.inc installer/bin/dune.inc
-    DUNE_TARGET @installer/bin/gen-dkml
+    REL_FILENAMES i-offline/bin/dune-common.inc i-offline/bin/dune.inc
+    DUNE_TARGET @i-offline/bin/gen-dkml
 )
 DkMLBumpPackagesParticipant_GitAddAndCommit()
