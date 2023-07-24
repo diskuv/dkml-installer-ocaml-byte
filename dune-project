@@ -1,6 +1,6 @@
 (lang dune 2.9)
 
-(name dkml-installer-ocaml-network)
+(name dkml-installer-ocaml-offline)
 (version 2.0.2)
 
 (generate_opam_files true)
@@ -10,22 +10,6 @@
 (license Apache-2.0)
 (authors "Diskuv, Inc. <opensource+diskuv-ocaml@support.diskuv.com>")
 (maintainers "opensource+diskuv-ocaml@support.diskuv.com")
-
-(package
- (name dkml-installer-ocaml-network)
- (synopsis "DkML network installer generator for OCaml")
- (description
-  "Generates a network installer for OCaml, including Visual Studio and Git on Windows, and including a OCaml compiler built during installation time")
- (depends
-  (odoc                                   (and (>= 1.5.3) :with-doc))
-  (ocaml                                  (>= 4.12.1~))
-  (dkml-component-ocamlcompiler-network   (and (>= 4.14.0~) (< 4.14.1~)))
-  (dkml-component-offline-desktop-full    (>= 0.1.0))
-  (dkml-component-offline-opamshim        (>= 2.2.0~alpha0~20221104))
-  (dkml-install-installer                 (>= 0.3.0))
-  (dkml-package-console                   (>= 0.3.0))
-  (dkml-workflows                         (and (>= 1.1.0) :build))
-  (alcotest                               (and (>= 1.4.0) :with-test))))
 
 (package
  (name dkml-installer-ocaml-offline)
@@ -40,5 +24,4 @@
   (dkml-component-offline-opamshim        (>= 2.2.0~alpha0~20221104))
   (dkml-install-installer                 (>= 0.3.0))
   (dkml-package-console                   (>= 0.3.0))
-  (dkml-workflows                         (and (>= 1.1.0) :build))
-  (alcotest                               (and (>= 1.4.0) :with-test))))
+  (dkml-workflows                         (and (>= 1.1.0) :build))))
