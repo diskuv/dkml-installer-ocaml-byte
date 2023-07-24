@@ -1,7 +1,9 @@
-# DkML Installer
+# DkML Installer - Bytecode Edition
 
-The DkML distribution is an open-source set of software
-that supports software development in pure OCaml. The distribution's
+> There is a more-powerful but slower-to-install version of the installer available as the [DkML Installer - Native Code Edition](https://github.com/diskuv/dkml-installer-ocaml) that may require Administrator permissions. This Bytecode edition is only meant for education.
+
+DkML Bytecode Edition is an open-source set of software
+that supports software development in pure OCaml. The Bytecode Edition's
 strengths are its:
 
 * full compatibility with OCaml standards like Opam, Dune and ocamlfind
@@ -17,9 +19,6 @@ These alternatives may be better depending on your use case:
 * Developing operating system kernels? Have a look at [Mirage OS](https://mirage.io/)
 * Developing Linux server software like web servers? Plain old [OCaml on Debian, etc.](https://ocaml.org/docs/up-and-running) works well
 * Writing compilers or proofs? Plain old OCaml works really well
-* Wanting quick installations? *Use anything but DkML!* DkML will conduct
-  from-source builds unless it can guarantee (and code sign) the binaries are
-  reproducible. Today that means a lot of compiling.
 
 The DkML Installer for OCaml generates and distributes installers for
 the DkML distribution. Windows is ready today; macOS will be available soon.
@@ -31,43 +30,15 @@ For news about DkML,
 
 **Windows user?**
 
-Briefly review the following:
+Run the [latest Windows 64-bit Bytecode Edition installer](https://gitlab.com/diskuv-ocaml/distributions/dkml/-/releases/2.0.2/downloads/setup64bu.exe).
 
-> You need to **stay at your computer for 15 minutes** and press "Yes" if either
-> `Visual Studio Installer` or `Git for Windows` or both programs ask you to
-> allow installation.
-> After 15 minutes, you can go have lunch or do other work for the
-> **remaining hour**.
->
-> First time installations may get a notification printed in red. If you see it, reboot your
-> computer and then restart your installation so that Visual Studio Installer
-> can complete. The notification looks like:
->
-> ```diff
-> - FATAL [118acf2a]. The machine needs rebooting.
-> - ...
-> - >>> The machine needs rebooting. <<<
-> -         ...
-> -         FATAL [5f927a8b].
-> -         A transient failure occurred.
-> -         ...
-> -         >>> A transient failure occurred. <<<
-> ```
->
-> You may be asked to accept a certificate from
-> `Open Source Developer, Gerardo Grignoli` for the `gsudo` executable
-> that was issued by
-> `Certum Code Signing CA SHA2`.
-
-Then run the [latest Windows 64-bit installer](https://github.com/diskuv/dkml-installer-ocaml/releases/download/v2.0.2/setup-diskuv-ocaml-windows_x86_64-2.0.2.exe).
-
-Now that your install is completed, you can read the
+After your install is completed, you can read the
 [Install is done! What next?](https://diskuv-ocaml.gitlab.io/distributions/dkml/#install-is-done-what-next)
 documentation.
 
 ---
 
-The full set of releases is at <https://github.com/diskuv/dkml-installer-ocaml/releases>
+The full set of releases is at <https://gitlab.com/diskuv-ocaml/distributions/dkml/-/releases>
 
 The full documentation is at <https://diskuv-ocaml.gitlab.io/distributions/dkml/#introduction>
 

@@ -51,7 +51,7 @@ FIRST clone the `winget-pkgs` repository alongside the `dkml-installer-ocaml`
 directory with:
 
 ```powershell
-cd dkml-installer-ocaml
+cd dkml-installer-ocaml-byte
 cd ..
 git clone https://github.com/microsoft/winget-pkgs.git
 ```
@@ -59,7 +59,7 @@ git clone https://github.com/microsoft/winget-pkgs.git
 SECOND, run the manifest in the sandbox:
 
 ```powershell
-if (Test-Path ..\di-ocaml) {$DIOCAML="..\di-ocaml"} else {$DIOCAML="..\dkml-installer-ocaml"}
+if (Test-Path ..\di-ocamlb) {$DIOCAML="..\di-ocamlb"} else {$DIOCAML="..\dkml-installer-ocaml-byte"}
 .\Tools\SandboxTest.ps1 "$DIOCAML\installer\winget\manifest"
 ```
 
