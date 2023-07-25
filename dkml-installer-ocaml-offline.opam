@@ -19,7 +19,6 @@ depends: [
   "dkml-install-installer" {>= "0.3.0"}
   "dkml-package-console" {>= "0.3.0"}
   "dkml-workflows" {>= "1.1.0" & build}
-  "alcotest" {>= "1.4.0" & with-test}
 ]
 build: [
   ["dune" "subst"] {dev}
