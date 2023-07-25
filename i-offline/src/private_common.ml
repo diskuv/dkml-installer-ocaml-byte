@@ -9,9 +9,9 @@ let build_info =
 
 let program_name =
   {
-    Author_types.name_full = "DkML Lite";
-    name_camel_case_nospaces = "DkML Lite";
-    name_kebab_lower_case = "dkml-lite";
+    Author_types.name_full = "DkML Byte";
+    name_camel_case_nospaces = "DkML Byte";
+    name_kebab_lower_case = "dkml-byte";
     installation_prefix_camel_case_nospaces_opt = None;
     installation_prefix_kebab_lower_case_opt = None;
   }

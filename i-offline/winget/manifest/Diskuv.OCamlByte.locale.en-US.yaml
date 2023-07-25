@@ -10,7 +10,7 @@ PackageLocale: en-US
 Publisher: Diskuv, Inc.
 PublisherUrl: https://www.diskuv.com/
 PrivacyUrl: https://diskuv.com/legal#privacy_policy
-PackageName: DkML Bytecode
+PackageName: DkML Byte
 PackageUrl: https://diskuv.com/dkmlbook/
 License: Apache License, Version 2.0
 LicenseUrl: https://github.com/diskuv/dkml-installer-ocaml-byte/blob/main/LICENSE
