@@ -7,6 +7,7 @@
  (package dkml-installer-ocaml-offline) (name runner_user)
  (modules runner_user) (ocamlopt_flags (:include ./user-link-flags.sexp))
  (libraries dkml-install-runner.user private_common
+  dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
   dkml-component-staging-ocamlrun dkml-component-staging-withdkml))
 
@@ -14,12 +15,14 @@
  (package dkml-installer-ocaml-offline) (name runner_admin)
  (modules runner_admin) (ocamlopt_flags (:include ./admin-link-flags.sexp))
  (libraries dkml-install-runner.admin private_common
+  dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
   dkml-component-staging-ocamlrun dkml-component-staging-withdkml))
 
 (executable (public_name dkml-installer-ocaml-offline-create-installers)
  (package dkml-installer-ocaml-offline) (name create_installers)
  (libraries dkml-package-console.create cmdliner private_common
+  dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
   dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
  (modules create_installers))
@@ -27,6 +30,7 @@
 (executable (public_name dkml-installer-ocaml-offline-package-install)
  (package dkml-installer-ocaml-offline) (name entry_install)
  (libraries dkml-package-console.entry cmdliner private_common
+  dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
   dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
  (modules entry_install)
@@ -35,7 +39,8 @@
 (executable (public_name dkml-installer-ocaml-offline-package-uninstall)
  (package dkml-installer-ocaml-offline) (name entry_uninstall)
  (libraries dkml-package-console.entry cmdliner private_common
-  dkml-component-offline-desktop-full dkml-component-staging-ocamlrun)
+  dkml-component-ocamlcompiler-offline dkml-component-offline-desktop-full
+  dkml-component-staging-ocamlrun)
  (modules entry_uninstall)
  (ocamlopt_flags (:include ./console-link-flags.sexp)))
 
@@ -43,6 +48,7 @@
  (package dkml-installer-ocaml-offline) (name package_setup)
  (modes (byte exe))
  (libraries dkml-package-console.setup cmdliner private_common
+  dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
   dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
  (modules package_setup))
@@ -51,7 +57,8 @@
  (package dkml-installer-ocaml-offline) (name package_uninstaller)
  (modes (byte exe))
  (libraries dkml-package-console.uninstaller cmdliner private_common
-  dkml-component-offline-desktop-full dkml-component-staging-ocamlrun)
+  dkml-component-ocamlcompiler-offline dkml-component-offline-desktop-full
+  dkml-component-staging-ocamlrun)
  (modules package_uninstaller))
 
 (install (section bin) (package dkml-installer-ocaml-offline)
