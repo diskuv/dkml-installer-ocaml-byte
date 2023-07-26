@@ -9,7 +9,8 @@
  (libraries dkml-install-runner.user private_common
   dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
-  dkml-component-staging-ocamlrun dkml-component-staging-withdkml))
+  dkml-component-staging-dkmlconfdir dkml-component-staging-ocamlrun
+  dkml-component-staging-withdkml))
 
 (executable (public_name dkml-installer-ocaml-offline-admin-runner)
  (package dkml-installer-ocaml-offline) (name runner_admin)
@@ -17,14 +18,16 @@
  (libraries dkml-install-runner.admin private_common
   dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
-  dkml-component-staging-ocamlrun dkml-component-staging-withdkml))
+  dkml-component-staging-dkmlconfdir dkml-component-staging-ocamlrun
+  dkml-component-staging-withdkml))
 
 (executable (public_name dkml-installer-ocaml-offline-create-installers)
  (package dkml-installer-ocaml-offline) (name create_installers)
  (libraries dkml-package-console.create cmdliner private_common
   dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
-  dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
+  dkml-component-staging-dkmlconfdir dkml-component-staging-ocamlrun
+  dkml-component-staging-withdkml)
  (modules create_installers))
 
 (executable (public_name dkml-installer-ocaml-offline-package-install)
@@ -32,7 +35,8 @@
  (libraries dkml-package-console.entry cmdliner private_common
   dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
-  dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
+  dkml-component-staging-dkmlconfdir dkml-component-staging-ocamlrun
+  dkml-component-staging-withdkml)
  (modules entry_install)
  (ocamlopt_flags (:include ./console-link-flags.sexp)))
 
@@ -50,7 +54,8 @@
  (libraries dkml-package-console.setup cmdliner private_common
   dkml-component-ocamlcompiler-common dkml-component-ocamlcompiler-offline
   dkml-component-offline-desktop-full dkml-component-staging-desktop-full
-  dkml-component-staging-ocamlrun dkml-component-staging-withdkml)
+  dkml-component-staging-dkmlconfdir dkml-component-staging-ocamlrun
+  dkml-component-staging-withdkml)
  (modules package_setup))
 
 (executable (public_name dkml-installer-ocaml-offline-package-uninstaller)
