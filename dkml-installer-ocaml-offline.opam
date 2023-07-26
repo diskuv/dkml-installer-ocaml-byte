@@ -49,11 +49,6 @@ install: [
     "-vv"
     "--program-version"
     "2.0.2"
-    #   These components must be the same in i-offline/bin/depends.txt
-    "--component"
-    "ocamlcompiler-offline"
-    "--component"
-    "offline-desktop-full"
 
     # Only Windows, Linux (dockcross manylinux2014) and Darwin Intel which
     # corresponds to the build environments of GitHub workflow setup-dkml.yml.
