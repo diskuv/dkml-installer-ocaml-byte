@@ -21,6 +21,5 @@
   (ocaml                                  (>= 4.12.1~))
   (dkml-component-ocamlcompiler-offline   (and (>= 4.14.0~) (< 4.14.1~)))
   (dkml-component-offline-desktop-full    (>= 0.1.0))
-  (dkml-install-installer                 (>= 0.3.0))
-  (dkml-package-console                   (>= 0.3.0))
+  (dkml-install-installer                 (>= 0.5.0))
   (dkml-workflows                         (and (>= 1.1.0) :build))))
