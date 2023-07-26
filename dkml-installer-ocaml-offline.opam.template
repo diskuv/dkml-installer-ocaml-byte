@@ -12,6 +12,7 @@ install: [
     "-vv"
     "--program-version"
     "2.0.2"
+    #   These components must be the same in i-offline/bin/depends.txt
     "--component"
     "ocamlcompiler-offline"
     "--component"
