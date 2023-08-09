@@ -30,17 +30,17 @@ For news about DkML,
 
 **Windows user?**
 
-Run the [latest Windows 64-bit Bytecode Edition installer](https://gitlab.com/diskuv-ocaml/distributions/dkml/-/releases/2.0.2/downloads/setup64bu.exe).
+Run the [latest Windows 64-bit Bytecode Edition installer](https://gitlab.com/dkml/distributions/dkml/-/releases/2.0.2/downloads/setup64bu.exe).
 
 After your install is completed, you can read the
-[Install is done! What next?](https://diskuv-ocaml.gitlab.io/distributions/dkml/#install-is-done-what-next)
+[Install is done! What next?](https://diskuv.com/dkmlbook/#install-is-done-what-next)
 documentation.
 
 ---
 
-The full set of releases is at <https://gitlab.com/diskuv-ocaml/distributions/dkml/-/releases>
+The full set of releases is at <https://gitlab.com/dkml/distributions/dkml/-/releases>
 
-The full documentation is at <https://diskuv-ocaml.gitlab.io/distributions/dkml/#introduction>
+The full documentation is at <https://diskuv.com/dkmlbook>
 
 ## Sponsor
 
