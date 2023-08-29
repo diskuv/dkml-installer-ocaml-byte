@@ -1,0 +1,4 @@
+--install=ocamlcompiler-offline
+--install=offline-desktop-full
+--uninstall=ocamlcompiler-offline
+--uninstall=offline-desktop-full
