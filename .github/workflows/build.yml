@@ -84,15 +84,11 @@ jobs:
       - name: Build and test the package on Windows host
         if: startsWith(matrix.dkml_host_abi, 'windows_')
         shell: msys2 {0}
-        # with:
-        #   DKML_HOST_ABI: ${{ matrix.dkml_host_abi }}
-        run: ci/build-test.sh --opam-package=${{ env.OPAM_PACKAGE }} --program-name-kebab=${{ env.PROGRAM_NAME_KEBAB }}
+        run: ci/build-test.sh --opam-package=${{ env.OPAM_PACKAGE }} --program-name-kebab=${{ env.PROGRAM_NAME_KEBAB }} --git-ref-name=${{ github.ref_name }}
 
       - name: Build and test the package on non-Windows host
         if: "!startsWith(matrix.dkml_host_abi, 'windows_')"
-        # with:
-        #   DKML_HOST_ABI: ${{ matrix.dkml_host_abi }}
-        run: ci/build-test.sh --opam-package=${{ env.OPAM_PACKAGE }} --program-name-kebab=${{ env.PROGRAM_NAME_KEBAB }}
+        run: ci/build-test.sh --opam-package=${{ env.OPAM_PACKAGE }} --program-name-kebab=${{ env.PROGRAM_NAME_KEBAB }} --git-ref-name=${{ github.ref_name }}
 
       # The Teardown DKML action will finalize caching, etc.
 

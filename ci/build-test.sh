@@ -2,7 +2,7 @@
 set -euf
 
 usage() {
-  echo 'build-test.sh --opam-package PACKAGE --program-name-kebab NAME' >&2
+  echo 'build-test.sh --opam-package PACKAGE --program-name-kebab NAME --git-ref-name GIT_TAG_OR_BRANCH_OR_COMMIT' >&2
   exit 2
 }
 fail() {
@@ -12,6 +12,7 @@ fail() {
 
 export OPAM_PACKAGE=
 export PROGRAM_NAME_KEBAB=
+export GIT_REF_NAME=
 
 OPTIND=1
 while getopts :h-: option; do
@@ -22,6 +23,8 @@ while getopts :h-: option; do
     opam-package=*) OPAM_PACKAGE=${OPTARG#*=} ;;
     program-name-kebab) fail "Option \"$OPTARG\" missing argument" ;;
     program-name-kebab=*) PROGRAM_NAME_KEBAB=${OPTARG#*=} ;;
+    git-ref-name) fail "Option \"$OPTARG\" missing argument" ;;
+    git-ref-name=*) GIT_REF_NAME=${OPTARG#*=} ;;
     help) usage ;;
     help=*) fail "Option \"${OPTARG%%=*}\" has unexpected argument" ;;
     *) fail "Unknown long option \"${OPTARG%%=*}\"" ;;
@@ -39,6 +42,9 @@ fi
 if [ -z "$PROGRAM_NAME_KEBAB" ]; then
   fail "Missing --program-name-kebab option"
 fi
+if [ -z "$GIT_REF_NAME" ]; then
+  fail "Missing --git-ref-name option"
+fi
 
 # shellcheck disable=SC2154
 echo "
@@ -51,6 +57,7 @@ Arguments
 ---------
 OPAM_PACKAGE=${OPAM_PACKAGE}
 PROGRAM_NAME_KEBAB=${PROGRAM_NAME_KEBAB}
+GIT_REF_NAME=${GIT_REF_NAME}
 .
 ------
 Matrix
@@ -89,6 +96,9 @@ opamrun exec -- ocamlc -config
 
 # Update
 opamrun update
+
+# Pin dkml-installer-ocaml-common to the same as dkml-installer-ocaml-byte
+opamrun pin dkml-installer-ocaml-common "git+https://github.com/diskuv/dkml-installer-ocaml.git#$GIT_REF_NAME" --no-action
 
 # Build the installer
 case "$dkml_host_abi" in
