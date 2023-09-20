@@ -71,7 +71,7 @@
   (package_uninstaller.bc as
    dkml-installer-ocaml-offline-package-uninstaller.bc)))
 
-(rule (alias runtest)
+(rule (alias runtest) (package dkml-installer-ocaml-offline)
  (deps (:ps package_setup.bc) (:pu package_uninstaller.bc))
  (action
   (progn (with-stdout-to package_setup.info.txt (run ocamlobjinfo %{ps}))
