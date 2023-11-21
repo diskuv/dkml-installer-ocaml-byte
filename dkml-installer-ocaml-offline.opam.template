@@ -30,6 +30,7 @@ install: [
     "--target-dir"
     "%{_:share}%/t"
 
+    # $(dune-context) is a macro for the correct Dune context directory based on the target ABI
     "--runner-admin-exe"
     "_build/install/$(dune-context)/bin/dkml-installer-ocaml-offline-admin-runner%{exe}%"
     "--runner-user-exe"
