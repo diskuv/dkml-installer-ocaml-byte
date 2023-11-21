@@ -35,6 +35,9 @@ build: [
   ["dune" "install" "-p" name "--create-install-files" name]
 ]
 dev-repo: "git+https://github.com/diskuv/dkml-installer-ocaml.git"
+build-env: [
+  OCAMLRUNPARAM = "b"
+]
 install: [
   # Create the installer executable after `dune install` (which is after
   # `build:[]` section) so Dune can do plugin rewriting since Dune edits (yes!)
@@ -67,6 +70,7 @@ install: [
     "--target-dir"
     "%{_:share}%/t"
 
+    # $(dune-context) is a macro for the correct Dune context directory based on the target ABI
     "--runner-admin-exe"
     "_build/install/$(dune-context)/bin/dkml-installer-ocaml-offline-admin-runner%{exe}%"
     "--runner-user-exe"
