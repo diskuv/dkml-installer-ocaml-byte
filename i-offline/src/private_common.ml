@@ -6,8 +6,11 @@ let build_info = { Author_types.package_name = "dkml-installer-ocaml-offline" }
 let program_name =
   {
     Author_types.name_full = "DkML Byte";
+
+    (* Must be in sync with dkml-runtime-apps/src/runtimelib/dkml_context.ml for [dkml init --system], etc. *)
     name_camel_case_nospaces = "DkMLByte";
     name_kebab_lower_case = "dkml-byte";
+
     installation_prefix_camel_case_nospaces_opt = None;
     installation_prefix_kebab_lower_case_opt = None;
   }
