@@ -1,6 +1,6 @@
 # DkML Installer - Bytecode Edition
 
-> There is a more-powerful but slower-to-install version of the installer available as the [DkML Installer - Native Code Edition](https://github.com/diskuv/dkml-installer-ocaml) that may require Administrator permissions. This Bytecode edition is only meant for education.
+> There is a more-powerful but slower-to-install version of the installer available as the [DkML Installer - Native Code Edition](https://github.com/diskuv/dkml-installer-ocaml) that may require Administrator permissions. This Bytecode edition was only meant for education **and has been discontinued due to limited uptake**.
 
 DkML Bytecode Edition is an open-source set of software
 that supports software development in pure OCaml. The Bytecode Edition's
@@ -21,7 +21,7 @@ These alternatives may be better depending on your use case:
 * Writing compilers or proofs? Plain old OCaml works really well
 
 The DkML Installer for OCaml generates and distributes installers for
-the DkML distribution. Windows is ready today; macOS will be available soon.
+the DkML distribution. Windows, Debian/x86_64 and macOS/Silicon are ready today.
 
 For news about DkML, <!-- markdown-link-check-disable-next-line -->
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/diskuv.svg?style=social&label=Follow%20%40diskuv)](https://twitter.com/diskuv) on Twitter.

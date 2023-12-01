@@ -22,7 +22,6 @@ Commands:
   - dkml
   - ocaml
   - ocamlc
-  - ocamlc.opt
   - ocamldebug
   # BUT 3 ... ocamldoc is essentially deprecated by odoc
   # - ocamldoc
