@@ -4,8 +4,8 @@ version: "2.1.1"
 synopsis: "DkML offline installer generator for OCaml"
 description:
   "Generates an offline installer for OCaml. The offline installer only supports bytecode unless the end-user machine has a C + ASM compilers (ex. Visual Studio on Windows) at the same location as the build machine"
-maintainer: ["opensource+diskuv-ocaml@support.diskuv.com"]
-authors: ["Diskuv, Inc. <opensource+diskuv-ocaml@support.diskuv.com>"]
+maintainer: ["opensource+dkml@support.diskuv.com"]
+authors: ["Diskuv, Inc. <opensource+dkml@support.diskuv.com>"]
 license: "Apache-2.0"
 homepage: "https://github.com/diskuv/dkml-installer-ocaml"
 bug-reports: "https://github.com/diskuv/dkml-installer-ocaml/issues"
@@ -13,7 +13,7 @@ depends: [
   "dune" {>= "2.9"}
   "odoc" {>= "1.5.3" & with-doc}
   "ocaml" {>= "4.12.1~"}
-  "dkml-component-ocamlcompiler-offline" {>= "4.14.0~" & < "4.14.1~"}
+  "dkml-component-ocamlcompiler-offline" {>= "4.14.2~" & < "4.14.3~"}
   "dkml-component-offline-desktop-full" {>= "0.1.0"}
   "dkml-install-installer" {>= "0.5.2"}
   "dkml-workflows" {>= "1.1.0" & build}

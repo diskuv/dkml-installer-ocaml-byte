@@ -8,8 +8,8 @@
 (source
  (github diskuv/dkml-installer-ocaml))
 (license Apache-2.0)
-(authors "Diskuv, Inc. <opensource+diskuv-ocaml@support.diskuv.com>")
-(maintainers "opensource+diskuv-ocaml@support.diskuv.com")
+(authors "Diskuv, Inc. <opensource+dkml@support.diskuv.com>")
+(maintainers "opensource+dkml@support.diskuv.com")
 
 (package
  (name dkml-installer-ocaml-offline)
@@ -19,7 +19,7 @@
  (depends
   (odoc                                   (and (>= 1.5.3) :with-doc))
   (ocaml                                  (>= 4.12.1~))
-  (dkml-component-ocamlcompiler-offline   (and (>= 4.14.0~) (< 4.14.1~)))
+  (dkml-component-ocamlcompiler-offline   (and (>= 4.14.2~) (< 4.14.3~)))
   (dkml-component-offline-desktop-full    (>= 0.1.0))
   (dkml-install-installer                 (>= 0.5.2))
   (dkml-workflows                         (and (>= 1.1.0) :build))))
