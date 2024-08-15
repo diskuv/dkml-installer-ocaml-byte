@@ -30,7 +30,7 @@ For news about DkML, <!-- markdown-link-check-disable-next-line -->
 
 **Windows user?**
 
-Run the [latest Windows 64-bit Bytecode Edition installer](https://gitlab.com/dkml/distributions/dkml/-/releases/2.1.1/downloads/setup64bu.exe).
+Run the [latest Windows 64-bit Bytecode Edition installer](https://gitlab.com/dkml/distributions/dkml/-/releases/2.1.2/downloads/setup64bu.exe).
 
 After your install is completed, you can read the
 [Install is done! What next?](https://diskuv.com/dkmlbook/#install-is-done-what-next)

@@ -1,7 +1,7 @@
 (lang dune 2.9)
 
 (name dkml-installer-ocaml-offline)
-(version 2.1.1)
+(version 2.1.2)
 
 (generate_opam_files true)
 
