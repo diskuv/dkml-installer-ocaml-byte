@@ -19,6 +19,7 @@ Commands:
   # BUT 1 ... max 16 entries in Commands:[] so took only the most commonly used
   # BUT 2 ... will be a [winget install dune] so do not register those commands!
   # - dune
+  - dk
   - dkml
   - ocaml
   - ocamlc
