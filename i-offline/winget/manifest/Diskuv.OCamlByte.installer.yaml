@@ -46,7 +46,7 @@ InstallerSwitches:
   SilentWithProgress: --ci
   Interactive: --color=always
   InstallLocation: --prefix "<INSTALLPATH>"
-ReleaseDate: 2024-08-21 # AUTO-BUMP
+ReleaseDate: 2024-08-22 # AUTO-BUMP
 # Dependencies:
   # ExternalDependencies:
   #   - Microsoft.VisualStudio.2019.BuildTools
