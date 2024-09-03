@@ -236,7 +236,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download and unpack ${{ matrix.dkml_host_abi }} artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ matrix.dkml_host_abi }}
           path: dist
@@ -330,7 +330,7 @@ jobs:
 
     steps:
       - name: Download and unpack ${{ matrix.dkml_host_abi }} artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ matrix.dkml_host_abi }}
           path: dist
@@ -466,7 +466,7 @@ jobs:
       - build
       - release-notes
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           path: dist
 
